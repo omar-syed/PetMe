@@ -1,3 +1,96 @@
-.main{
-    padding-top: 5em;
+:root {
+    --primary: #BF7245;
+    --secondary: #d9c9ba48;
+    --bs-primary-bg-subtle: #bb85636b !important;
+}   
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.border-primary {
+    border-color: var(--primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary) !important;
+    color: white !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary) !important;
+    opacity: 90%;
+    color: white !important;
+    border-color: var(--primary) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.text-bg-primary {
+    background-color: var(--primary) !important;
+    color: white !important;
+    border-color: var(--primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+
+.btn-outline-primary, .outline-primary {
+    background-color: white !important;
+    border-color: var(--primary) !important;
+    color: var(--primary) !important;
+}
+
+.btn-outline-primary:hover, .outline-primary:hover {
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+
+.container {
+    max-width: 1224px;
+    padding: 0;
+}
+
+#root {
+    min-height: 100vh;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+#root>div:first-of-type, #root>section {
+    min-height: 100vh;
+}
+
+.alert.float {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.9;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    min-width: 400px;
+    z-index: 10000;
+}
+
+form input {
+    outline: none;
+    box-shadow:none !important;
+    border:none !important;
+}
+
+form .input-group {
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    border-radius: 12px;
+}
+
+/* hide carousel of posts images */
+.card .post-image .carousel-indicators {
+    visibility: hidden;
 }

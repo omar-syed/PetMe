@@ -1,8 +1,17 @@
 
 .navbar {
-    background-color: #D9C9BA;
-    height: 60px;
-    
+    background-color: #FCFCFC;
+    height: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.06);
+}
+
+.main {
+    background: #FAFAFA;
+}
+
+.navbar img#profile_picture {
+    object-fit: cover;
+    object-position: top;
 }
 
 .navbar-brand {
@@ -13,7 +22,7 @@
 }
 
 .login-button {
-    background-color: #8c594d;
+    background-color: var(--primary);
     color: #fff;
     font-size: 14px;
     padding: 8px 20px;
@@ -22,8 +31,13 @@
     transition: 0.3s background-color;
 }
 
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .login-button:hover {
-    background-color: #8c594d;
+    background-color: var(--primary);
 }
 
 .navbar-toggler {
